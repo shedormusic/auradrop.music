@@ -9,7 +9,7 @@ document.querySelector("form").addEventListener("submit", function (e) {
   let message = "<b>📀 Новый релиз на AuraDrop</b>\n\n";
 
   formData.forEach((value, key) => {
-    message += `<b>${key}:</b> ${value}\n`;
+    message += <b>${key}:</b> ${value}\n;
   });
 
   fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
