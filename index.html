@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AuraDrop — Музыкальная дистрибуция</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1>AuraDrop</h1>
+    <p>Современная музыкальная дистрибуция без лишних барьеров</p>
+    <a href="#form" class="cta-button">Отправить релиз</a>
+  </header>
+
+  <section class="features">
+    <div class="feature">
+      <h3>Без скрытых комиссий</h3>
+      <p>Прозрачные условия и мгновенные выплаты.</p>
+    </div>
+    <div class="feature">
+      <h3>Все стриминги</h3>
+      <p>Spotify, Apple Music, Yandex Music и другие — одним кликом.</p>
+    </div>
+    <div class="feature">
+      <h3>Поддержка артистов</h3>
+      <p>Помощь на всех этапах релиза — от обложки до маркетинга.</p>
+    </div>
+  </section>
+
+  <section id="form" class="form-section">
+    <h2>Отправка релиза</h2>
+    <form id="releaseForm">
+      <div class="form-step active" data-step="1">
+        <h3>1. Информация о релизе</h3>
+        <input type="text" placeholder="Название трека" required />
+        <input type="text" placeholder="Артист" required />
+        <input type="text" placeholder="Жанр" />
+        <button type="button" class="next-btn">Далее</button>
+      </div>
+      <div class="form-step" data-step="2">
+        <h3>2. Артисты и права</h3>
+        <input type="text" placeholder="Автор слов" />
+        <input type="text" placeholder="Продюсер" />
+        <button type="button" class="prev-btn">Назад</button>
+        <button type="button" class="next-btn">Далее</button>
+      </div>
+      <div class="form-step" data-step="3">
+        <h3>3. Загрузка</h3>
+        <input type="file" />
+        <input type="file" />
+        <button type="button" class="prev-btn">Назад</button>
+        <button type="button" class="next-btn">Далее</button>
+      </div>
+      <div class="form-step" data-step="4">
+        <h3>4. Подтверждение</h3>
+        <label><input type="checkbox" required /> Я подтверждаю право на релиз</label>
+        <button type="button" class="prev-btn">Назад</button>
+        <button type="submit">Отправить</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="how-it-works">
+    <h2>Как это работает?</h2>
+    <ol>
+      <li>Вы отправляете релиз</li>
+      <li>Мы проверяем и публикуем</li>
+      <li>Трек попадает на стриминги</li>
+      <li>Вы получаете выплаты</li>
+    </ol>
+  </section>
+
+  <section class="about">
+    <h2>О компании</h2>
+    <p>AuraDrop — независимая дистрибуционная платформа, созданная артистами для артистов. Наша миссия — сделать релизы доступными каждому.</p>
+  </section>
+
+  <section class="faq">
+    <h2>Часто задаваемые вопросы</h2>
+    <div class="faq-item">
+      <button class="faq-question">Сколько стоит дистрибуция?</button>
+      <div class="faq-answer">Дистрибуция бесплатна. Мы берём % с роялти.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Как долго идёт проверка?</button>
+      <div class="faq-answer">Обычно до 48 часов.</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AuraDrop. Все права защищены.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
