@@ -1,0 +1,12 @@
+server/
+├── app.js                     ← Главный файл Express
+├── routes/
+│   └── auth.js                ← API-маршруты: /register /login /reset
+├── controllers/
+│   └── authController.js      ← Логика регистрации и входа
+├── models/
+│   └── User.js                ← Mongoose-модель пользователя
+├── utils/
+│   └── email.js               ← Отправка письма восстановления
+├── .env.example               ← Настройки окружения
+├── package.json               ← Зависимости
